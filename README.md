@@ -13,7 +13,7 @@
 
 ## 效果
 ###静态广告/动态广告
-![image](https://github.com/WuZhuoXuan/AboutlinkageTableview/raw/master/1.gif )  ![image](https://github.com/WuZhuoXuan/AboutlinkageTableview/raw/master/2.gif ) 
+![image](https://github.com/WuZhuoXuan/WZXLaunch/raw/master/1.gif )  ![image](https://github.com/WuZhuoXuan/WZXLaunch/raw/master/2.gif ) 
 
 
 ```objc
