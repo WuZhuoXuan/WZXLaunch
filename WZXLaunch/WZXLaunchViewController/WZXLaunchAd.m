@@ -193,15 +193,16 @@ NSString *const TimerSender = @"5";
 }
 - (void)removeView{
 
+     if(self.endPlays){
+            self.endPlays();
+        }
     [UIView animateWithDuration:0.5 animations:^{
         [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
         self.transform = CGAffineTransformMakeScale(1.5, 1.5);
         self.alpha = 0;
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
-        if(self.endPlays){
-            self.endPlays();
-        }
+       
     }];
     
 }
