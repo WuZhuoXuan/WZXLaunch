@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF0030C21DAE3936000B051B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0030C11DAE3936000B051B /* main.m */; };
+		BF0030C51DAE3936000B051B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0030C41DAE3936000B051B /* AppDelegate.m */; };
+		BF0030CB1DAE3936000B051B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0030C91DAE3936000B051B /* Main.storyboard */; };
+		BF0030CD1DAE3936000B051B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0030CC1DAE3936000B051B /* Assets.xcassets */; };
+		BF0030D01DAE3936000B051B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0030CE1DAE3936000B051B /* LaunchScreen.storyboard */; };
+		BF0030DB1DAE3937000B051B /* WZXLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0030DA1DAE3937000B051B /* WZXLaunchTests.m */; };
+		BF0030E61DAE3937000B051B /* WZXLaunchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0030E51DAE3937000B051B /* WZXLaunchUITests.m */; };
+		BF0030F81DAE3969000B051B /* WZXLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0030F51DAE3969000B051B /* WZXLaunchAd.m */; };
+		BF0030F91DAE3969000B051B /* WZXLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0030F71DAE3969000B051B /* WZXLaunchViewController.m */; };
+		BF0030FC1DAE3973000B051B /* HomeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0030FB1DAE3973000B051B /* HomeWebViewController.m */; };
+		BFDD08C71DAF1179005ACB94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDD08C61DAF1179005ACB94 /* ViewController.m */; };
+		DA832755544BBA2A0B08AA4D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09DB293315D9048FCC2C7AC5 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF0030D71DAE3937000B051B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF0030B51DAE3936000B051B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF0030BC1DAE3936000B051B;
+			remoteInfo = WZXLaunch;
+		};
+		BF0030E21DAE3937000B051B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF0030B51DAE3936000B051B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF0030BC1DAE3936000B051B;
+			remoteInfo = WZXLaunch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09DB293315D9048FCC2C7AC5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CAD88B7CBD734AAFB8B2339 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A501CE145834D919D50CE74B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BF0030BD1DAE3936000B051B /* WZXLaunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WZXLaunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0030C11DAE3936000B051B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF0030C31DAE3936000B051B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF0030C41DAE3936000B051B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF0030CA1DAE3936000B051B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF0030CC1DAE3936000B051B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF0030CF1DAE3936000B051B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF0030D11DAE3936000B051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0030D61DAE3937000B051B /* WZXLaunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZXLaunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0030DA1DAE3937000B051B /* WZXLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZXLaunchTests.m; sourceTree = "<group>"; };
+		BF0030DC1DAE3937000B051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0030E11DAE3937000B051B /* WZXLaunchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZXLaunchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0030E51DAE3937000B051B /* WZXLaunchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZXLaunchUITests.m; sourceTree = "<group>"; };
+		BF0030E71DAE3937000B051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0030F41DAE3969000B051B /* WZXLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZXLaunchAd.h; sourceTree = "<group>"; };
+		BF0030F51DAE3969000B051B /* WZXLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZXLaunchAd.m; sourceTree = "<group>"; };
+		BF0030F61DAE3969000B051B /* WZXLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZXLaunchViewController.h; sourceTree = "<group>"; };
+		BF0030F71DAE3969000B051B /* WZXLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZXLaunchViewController.m; sourceTree = "<group>"; };
+		BF0030FA1DAE3973000B051B /* HomeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeWebViewController.h; sourceTree = "<group>"; };
+		BF0030FB1DAE3973000B051B /* HomeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeWebViewController.m; sourceTree = "<group>"; };
+		BFDD08C51DAF1179005ACB94 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BFDD08C61DAF1179005ACB94 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF0030BA1DAE3936000B051B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA832755544BBA2A0B08AA4D /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0030D31DAE3937000B051B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0030DE1DAE3937000B051B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC5DD37EE045FA067FAFD42A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09DB293315D9048FCC2C7AC5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF0030B41DAE3936000B051B = {
+			isa = PBXGroup;
+			children = (
+				BF0030BF1DAE3936000B051B /* WZXLaunch */,
+				BF0030D91DAE3937000B051B /* WZXLaunchTests */,
+				BF0030E41DAE3937000B051B /* WZXLaunchUITests */,
+				BF0030BE1DAE3936000B051B /* Products */,
+				FCB4704BA7E06C421D55060E /* Pods */,
+				BC5DD37EE045FA067FAFD42A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF0030BE1DAE3936000B051B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF0030BD1DAE3936000B051B /* WZXLaunch.app */,
+				BF0030D61DAE3937000B051B /* WZXLaunchTests.xctest */,
+				BF0030E11DAE3937000B051B /* WZXLaunchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF0030BF1DAE3936000B051B /* WZXLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				BF0030F31DAE3969000B051B /* WZXLaunchViewController */,
+				BF0030C31DAE3936000B051B /* AppDelegate.h */,
+				BF0030C41DAE3936000B051B /* AppDelegate.m */,
+				BFDD08C51DAF1179005ACB94 /* ViewController.h */,
+				BFDD08C61DAF1179005ACB94 /* ViewController.m */,
+				BF0030FA1DAE3973000B051B /* HomeWebViewController.h */,
+				BF0030FB1DAE3973000B051B /* HomeWebViewController.m */,
+				BF0030C91DAE3936000B051B /* Main.storyboard */,
+				BF0030CC1DAE3936000B051B /* Assets.xcassets */,
+				BF0030CE1DAE3936000B051B /* LaunchScreen.storyboard */,
+				BF0030D11DAE3936000B051B /* Info.plist */,
+				BF0030C01DAE3936000B051B /* Supporting Files */,
+			);
+			path = WZXLaunch;
+			sourceTree = "<group>";
+		};
+		BF0030C01DAE3936000B051B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF0030C11DAE3936000B051B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF0030D91DAE3937000B051B /* WZXLaunchTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF0030DA1DAE3937000B051B /* WZXLaunchTests.m */,
+				BF0030DC1DAE3937000B051B /* Info.plist */,
+			);
+			path = WZXLaunchTests;
+			sourceTree = "<group>";
+		};
+		BF0030E41DAE3937000B051B /* WZXLaunchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF0030E51DAE3937000B051B /* WZXLaunchUITests.m */,
+				BF0030E71DAE3937000B051B /* Info.plist */,
+			);
+			path = WZXLaunchUITests;
+			sourceTree = "<group>";
+		};
+		BF0030F31DAE3969000B051B /* WZXLaunchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF0030F41DAE3969000B051B /* WZXLaunchAd.h */,
+				BF0030F51DAE3969000B051B /* WZXLaunchAd.m */,
+				BF0030F61DAE3969000B051B /* WZXLaunchViewController.h */,
+				BF0030F71DAE3969000B051B /* WZXLaunchViewController.m */,
+			);
+			path = WZXLaunchViewController;
+			sourceTree = "<group>";
+		};
+		FCB4704BA7E06C421D55060E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD88B7CBD734AAFB8B2339 /* Pods.debug.xcconfig */,
+				A501CE145834D919D50CE74B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF0030BC1DAE3936000B051B /* WZXLaunch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0030EA1DAE3937000B051B /* Build configuration list for PBXNativeTarget "WZXLaunch" */;
+			buildPhases = (
+				182C1351EC92CF4CF9838714 /* Check Pods Manifest.lock */,
+				BF0030B91DAE3936000B051B /* Sources */,
+				BF0030BA1DAE3936000B051B /* Frameworks */,
+				BF0030BB1DAE3936000B051B /* Resources */,
+				3C4E9DBA2C1DC65CE33E32F7 /* Embed Pods Frameworks */,
+				E7D379AD8587FE95C3216791 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WZXLaunch;
+			productName = WZXLaunch;
+			productReference = BF0030BD1DAE3936000B051B /* WZXLaunch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF0030D51DAE3937000B051B /* WZXLaunchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0030ED1DAE3937000B051B /* Build configuration list for PBXNativeTarget "WZXLaunchTests" */;
+			buildPhases = (
+				BF0030D21DAE3937000B051B /* Sources */,
+				BF0030D31DAE3937000B051B /* Frameworks */,
+				BF0030D41DAE3937000B051B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF0030D81DAE3937000B051B /* PBXTargetDependency */,
+			);
+			name = WZXLaunchTests;
+			productName = WZXLaunchTests;
+			productReference = BF0030D61DAE3937000B051B /* WZXLaunchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF0030E01DAE3937000B051B /* WZXLaunchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0030F01DAE3937000B051B /* Build configuration list for PBXNativeTarget "WZXLaunchUITests" */;
+			buildPhases = (
+				BF0030DD1DAE3937000B051B /* Sources */,
+				BF0030DE1DAE3937000B051B /* Frameworks */,
+				BF0030DF1DAE3937000B051B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF0030E31DAE3937000B051B /* PBXTargetDependency */,
+			);
+			name = WZXLaunchUITests;
+			productName = WZXLaunchUITests;
+			productReference = BF0030E11DAE3937000B051B /* WZXLaunchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF0030B51DAE3936000B051B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = WZX;
+				TargetAttributes = {
+					BF0030BC1DAE3936000B051B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B9PCGR365T;
+						ProvisioningStyle = Automatic;
+					};
+					BF0030D51DAE3937000B051B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B9PCGR365T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BF0030BC1DAE3936000B051B;
+					};
+					BF0030E01DAE3937000B051B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B9PCGR365T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BF0030BC1DAE3936000B051B;
+					};
+				};
+			};
+			buildConfigurationList = BF0030B81DAE3936000B051B /* Build configuration list for PBXProject "WZXLaunch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF0030B41DAE3936000B051B;
+			productRefGroup = BF0030BE1DAE3936000B051B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF0030BC1DAE3936000B051B /* WZXLaunch */,
+				BF0030D51DAE3937000B051B /* WZXLaunchTests */,
+				BF0030E01DAE3937000B051B /* WZXLaunchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF0030BB1DAE3936000B051B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0030D01DAE3936000B051B /* LaunchScreen.storyboard in Resources */,
+				BF0030CD1DAE3936000B051B /* Assets.xcassets in Resources */,
+				BF0030CB1DAE3936000B051B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0030D41DAE3937000B051B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0030DF1DAE3937000B051B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		182C1351EC92CF4CF9838714 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3C4E9DBA2C1DC65CE33E32F7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D379AD8587FE95C3216791 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF0030B91DAE3936000B051B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDD08C71DAF1179005ACB94 /* ViewController.m in Sources */,
+				BF0030FC1DAE3973000B051B /* HomeWebViewController.m in Sources */,
+				BF0030F81DAE3969000B051B /* WZXLaunchAd.m in Sources */,
+				BF0030F91DAE3969000B051B /* WZXLaunchViewController.m in Sources */,
+				BF0030C51DAE3936000B051B /* AppDelegate.m in Sources */,
+				BF0030C21DAE3936000B051B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0030D21DAE3937000B051B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0030DB1DAE3937000B051B /* WZXLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0030DD1DAE3937000B051B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0030E61DAE3937000B051B /* WZXLaunchUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF0030D81DAE3937000B051B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF0030BC1DAE3936000B051B /* WZXLaunch */;
+			targetProxy = BF0030D71DAE3937000B051B /* PBXContainerItemProxy */;
+		};
+		BF0030E31DAE3937000B051B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF0030BC1DAE3936000B051B /* WZXLaunch */;
+			targetProxy = BF0030E21DAE3937000B051B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF0030C91DAE3936000B051B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0030CA1DAE3936000B051B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF0030CE1DAE3936000B051B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0030CF1DAE3936000B051B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF0030E81DAE3937000B051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF0030E91DAE3937000B051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF0030EB1DAE3937000B051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAD88B7CBD734AAFB8B2339 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = B9PCGR365T;
+				INFOPLIST_FILE = WZXLaunch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyingxiang.com.WZXLaunch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF0030EC1DAE3937000B051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A501CE145834D919D50CE74B /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = B9PCGR365T;
+				INFOPLIST_FILE = WZXLaunch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyingxiang.com.WZXLaunch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BF0030EE1DAE3937000B051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B9PCGR365T;
+				INFOPLIST_FILE = WZXLaunchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyingxiang.com.WZXLaunchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WZXLaunch.app/WZXLaunch";
+			};
+			name = Debug;
+		};
+		BF0030EF1DAE3937000B051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B9PCGR365T;
+				INFOPLIST_FILE = WZXLaunchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyingxiang.com.WZXLaunchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WZXLaunch.app/WZXLaunch";
+			};
+			name = Release;
+		};
+		BF0030F11DAE3937000B051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = B9PCGR365T;
+				INFOPLIST_FILE = WZXLaunchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyingxiang.com.WZXLaunchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WZXLaunch;
+			};
+			name = Debug;
+		};
+		BF0030F21DAE3937000B051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = B9PCGR365T;
+				INFOPLIST_FILE = WZXLaunchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyingxiang.com.WZXLaunchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WZXLaunch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF0030B81DAE3936000B051B /* Build configuration list for PBXProject "WZXLaunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0030E81DAE3937000B051B /* Debug */,
+				BF0030E91DAE3937000B051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0030EA1DAE3937000B051B /* Build configuration list for PBXNativeTarget "WZXLaunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0030EB1DAE3937000B051B /* Debug */,
+				BF0030EC1DAE3937000B051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0030ED1DAE3937000B051B /* Build configuration list for PBXNativeTarget "WZXLaunchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0030EE1DAE3937000B051B /* Debug */,
+				BF0030EF1DAE3937000B051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0030F01DAE3937000B051B /* Build configuration list for PBXNativeTarget "WZXLaunchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0030F11DAE3937000B051B /* Debug */,
+				BF0030F21DAE3937000B051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF0030B51DAE3936000B051B /* Project object */;
+}
