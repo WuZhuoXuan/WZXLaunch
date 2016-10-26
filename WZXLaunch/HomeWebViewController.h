@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^WebBack)();
+
 @interface HomeWebViewController : UIViewController
 
 @property (nonatomic,copy)NSString *urlStr;
 
 @property (nonatomic,assign)int AppDelegateSele;
+
+@property (nonatomic,copy) WebBack WebBack;
 
 @end

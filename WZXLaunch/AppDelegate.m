@@ -47,6 +47,17 @@
         VC.urlStr = @"http://www.jianshu.com/p/7205047eadf7";
         VC.title = @"广告";
         VC.AppDelegateSele= -1;
+        
+        VC.WebBack= ^(){
+            //广告展示完成回调,设置window根控制器
+            
+            ViewController *vc = [[ViewController alloc]init];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+            
+            self.window.rootViewController = nav;
+        };
+        
+        
         UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:VC];
         [WZXlaunchVC presentViewController:nav animated:YES completion:nil];
         

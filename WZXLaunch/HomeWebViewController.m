@@ -41,6 +41,11 @@
 
 - (void)back
 {
+    
+    if(self.WebBack){
+        
+        self.WebBack();
+    }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (NSString *)urlStr

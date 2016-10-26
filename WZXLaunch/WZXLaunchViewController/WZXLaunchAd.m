@@ -194,8 +194,12 @@ NSString *const TimerSender = @"5";
 - (void)removeView{
 
      if(self.endPlays){
-            self.endPlays();
-        }
+         if(self.ClickAds == NO){
+             
+             self.endPlays();
+         }
+         
+     }
     [UIView animateWithDuration:0.5 animations:^{
         [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
         self.transform = CGAffineTransformMakeScale(1.5, 1.5);
@@ -211,7 +215,7 @@ NSString *const TimerSender = @"5";
     WZXLaunchAd *launchAd = [[WZXLaunchAd alloc]initWithFrame:frame TimeInteger:timeSecond];
 
     launchAd.hideSkip = hideSkip;
-    
+     launchAd.ClickAds = NO;
     [launchAd.adImageView sd_setImageWithURL:[NSURL URLWithString:imageURL] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         
         if(imageURL){
@@ -227,10 +231,12 @@ NSString *const TimerSender = @"5";
         }
         
     }];
+    __weak typeof(launchAd) weakLaunch = launchAd;
     launchAd.ImageClick = ^(){
         
         if(ImageClick){
             ImageClick();
+            weakLaunch.ClickAds = YES;
         }
       
     };

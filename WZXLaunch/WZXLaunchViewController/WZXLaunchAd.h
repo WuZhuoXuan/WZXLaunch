@@ -41,6 +41,9 @@ typedef void (^EndPlays)();
 /// 广告播放结束
 @property (nonatomic, copy) EndPlays endPlays;
 
+/// 是否点击广告
+@property (nonatomic, assign) BOOL ClickAds;
+
 
 /**
  *  WZXLaunchAd
