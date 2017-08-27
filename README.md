@@ -3,7 +3,7 @@
 
 ==============
 
-###特性:
+### 特性:
 
 * 1.支持全屏/半屏广告.
 * 2.支持静态/动态广告.
@@ -12,7 +12,7 @@
 * 5.支持设置未检测到广告数据,启动页停留时间
 
 ## 效果
-###静态广告/动态广告
+### 静态广告/动态广告
 ![image](https://github.com/WuZhuoXuan/WZXLaunch/raw/master/1.gif )  ![image](https://github.com/WuZhuoXuan/WZXLaunch/raw/master/2.gif ) 
 
 
