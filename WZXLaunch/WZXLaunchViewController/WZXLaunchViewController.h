@@ -39,7 +39,7 @@ typedef void (^TheAdEnds)();
  *  @param theAdEnds         广告播放结束 回调
  *
  */
-+ (void)showWithFrame:(CGRect)imageFrame ImageURL:(NSString *)ImageURL advertisingURL:(NSString *)advertisingURL timeSecond:(NSInteger)timeSecond hideSkip:(BOOL)hideSkip imageLoadGood:(ImageLoadingGood)imageLoadGood clickImage:(ClickImage)clickImage theAdEnds:(TheAdEnds)theAdEnds;
++ (void)showWithFrame:(CGRect)imageFrame ImageURL:(NSString *)ImageURL timeSecond:(NSInteger)timeSecond hideSkip:(BOOL)hideSkip imageLoadGood:(ImageLoadingGood)imageLoadGood clickImage:(ClickImage)clickImage theAdEnds:(TheAdEnds)theAdEnds;
 
 
 

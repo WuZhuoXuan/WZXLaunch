@@ -52,48 +52,31 @@
  *
  *  @return WZXLaunchViewController
  */
-+(void)showWithFrame:(CGRect)imageFrame ImageURL:(NSString *)ImageURL advertisingURL:(NSString *)advertisingURL timeSecond:(NSInteger)timeSecond hideSkip:(BOOL)hideSkip imageLoadGood:(ImageLoadingGood)imageLoadGood clickImage:(ClickImage)clickImage theAdEnds:(TheAdEnds)theAdEnds{
++(void)showWithFrame:(CGRect)imageFrame ImageURL:(NSString *)ImageURL timeSecond:(NSInteger)timeSecond hideSkip:(BOOL)hideSkip imageLoadGood:(ImageLoadingGood)imageLoadGood clickImage:(ClickImage)clickImage theAdEnds:(TheAdEnds)theAdEnds{
 
-    
-    WZXLaunchViewController *WZXlaunchVC = [[WZXLaunchViewController alloc]init];
-    
-    
-    WZXlaunchVC.Launch = [WZXLaunchAd initImageWithframe:imageFrame imageURL:ImageURL timeSecond:timeSecond hideSkip:hideSkip LaunchAdCallback:^(UIImage *image, NSString *ImageURL) {
-        
-       
-        
-        if(imageLoadGood){
-            
-            imageLoadGood(image,ImageURL);
-        }
-        
-    } ImageClick:^{
-        
-       
-        
-        if(clickImage){
-            
-            clickImage(WZXlaunchVC);
-        }
-    
-        
-        
-    } endPlays:^{
-        
-       
-        
+    if(!ImageURL || timeSecond == 0 || [ImageURL isEqualToString:@""]){
         if(theAdEnds){
             theAdEnds();
         }
-        
+        return;
+    }
+    WZXLaunchViewController *WZXlaunchVC = [[WZXLaunchViewController alloc]init];
+    WZXlaunchVC.Launch = [WZXLaunchAd initImageWithframe:imageFrame imageURL:ImageURL timeSecond:timeSecond hideSkip:hideSkip LaunchAdCallback:^(UIImage *image, NSString *ImageURL) {
+        if(imageLoadGood){
+            imageLoadGood(image,ImageURL);
+        }
+    } ImageClick:^{
+        if(clickImage){
+            clickImage(WZXlaunchVC);
+        }
+    } endPlays:^{
+        if(theAdEnds){
+            theAdEnds();
+            return ;
+        }
     }];
-    
     [WZXlaunchVC.view addSubview:WZXlaunchVC.Launch];
-    
     [[UIApplication sharedApplication].delegate window].rootViewController = WZXlaunchVC;
-    
-    
-    
 }
 
 

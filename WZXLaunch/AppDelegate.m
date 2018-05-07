@@ -29,17 +29,14 @@
 - (void)WZXLaunchView{
     
     
-    NSString *gifImageURL = @"http://img1.gamedog.cn/2013/06/03/43-130603140F30.gif";
+    NSString *gifImageURL = @"https://github.com/WuZhuoXuan/WZXLaunch/blob/master/2.gif";
     
     NSString *imageURL = @"http://img4.duitang.com/uploads/item/201410/24/20141024135636_t2854.thumb.700_0.jpeg";
-    
-    ///设置启动页
-    [WZXLaunchViewController showWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-150) ImageURL:gifImageURL advertisingURL:@"http://www.jianshu.com/p/7205047eadf7" timeSecond:10 hideSkip:YES imageLoadGood:^(UIImage *image, NSString *imageURL) {
+    [WZXLaunchViewController showWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-150) ImageURL:imageURL timeSecond:10 hideSkip:NO imageLoadGood:^(UIImage *image, NSString *imageURL) {
         /// 广告加载结束
         NSLog(@"%@ %@",image,imageURL);
         
-    } clickImage:^(UIViewController *WZXlaunchVC){
-        
+    } clickImage:^(UIViewController *advertisingVC) {
         /// 点击广告
         
         //2.在webview中打开
@@ -59,21 +56,18 @@
         
         
         UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:VC];
-        [WZXlaunchVC presentViewController:nav animated:YES completion:nil];
-        
+        [advertisingVC presentViewController:nav animated:YES completion:nil];
         
     } theAdEnds:^{
-        
-        
         //广告展示完成回调,设置window根控制器
-     
+        
         ViewController *vc = [[ViewController alloc]init];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
         
         self.window.rootViewController = nav;
         
-        
     }];
+   
     
     
 }

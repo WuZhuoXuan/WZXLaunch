@@ -28,6 +28,7 @@ NSString *const TimerSender = @"5";
 - (instancetype)initWithFrame:(CGRect)frame TimeInteger:(NSInteger)TimeInteger{
     
     if(self = [super initWithFrame:frame]){
+        self.backgroundColor = [UIColor clearColor];
         self.adImageFrame = frame;
         self.TimeInteger = TimeInteger;
         self.frame = [UIScreen mainScreen].bounds;
@@ -44,7 +45,7 @@ NSString *const TimerSender = @"5";
         
         _LaunchImage = [[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
         _LaunchImage.image = [self getLaunchImage];
-     
+        _LaunchImage.backgroundColor = [UIColor clearColor];
     }
     return _LaunchImage;
 
@@ -57,7 +58,7 @@ NSString *const TimerSender = @"5";
 //        _adImageView.alpha = 0.2;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
         [_adImageView addGestureRecognizer:tap];
-        
+        _adImageView.backgroundColor = [UIColor clearColor];
     }
     return _adImageView;
     
@@ -184,7 +185,8 @@ NSString *const TimerSender = @"5";
     });
 }
 - (void)skipAction{
-    
+    if(_noDataTimer) dispatch_source_cancel(_noDataTimer);
+
     self.isClick = NO;
     if (_timer) dispatch_source_cancel(_timer);
     [self removeView];
@@ -195,7 +197,6 @@ NSString *const TimerSender = @"5";
 
      if(self.endPlays){
          if(self.ClickAds == NO){
-             
              self.endPlays();
          }
          
@@ -214,24 +215,24 @@ NSString *const TimerSender = @"5";
 
     WZXLaunchAd *launchAd = [[WZXLaunchAd alloc]initWithFrame:frame TimeInteger:timeSecond];
 
-    launchAd.hideSkip = hideSkip;
      launchAd.ClickAds = NO;
-    [launchAd.adImageView sd_setImageWithURL:[NSURL URLWithString:imageURL] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        
-        if(imageURL){
-        
-            if(LaunchAdCallback){
-              LaunchAdCallback(image,[NSString stringWithFormat:@"%@",imageURL]);
-            }
-           
-            
-            
-            [launchAd addSubview:launchAd.skipBtn];
-            [launchAd dispath_tiemr];
-        }
-        
-    }];
+    
     __weak typeof(launchAd) weakLaunch = launchAd;
+
+    [launchAd.adImageView sd_setImageWithURL:[NSURL URLWithString:imageURL] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        if(!error){
+            if(imageURL){
+                if(LaunchAdCallback){
+                    LaunchAdCallback(image,[NSString stringWithFormat:@"%@",imageURL]);
+                }
+                [weakLaunch addSubview:launchAd.skipBtn];
+                weakLaunch.hideSkip = hideSkip;
+                [weakLaunch dispath_tiemr];
+            }
+        }else{
+            [weakLaunch skipAction];
+        }
+    }];
     launchAd.ImageClick = ^(){
         
         if(ImageClick){
@@ -262,7 +263,7 @@ NSString *const TimerSender = @"5";
 
     _hideSkip = hideSkip;
     
-    if(!_hideSkip){
+    if(_hideSkip){
         [self.skipBtn removeFromSuperview];
     }
     
